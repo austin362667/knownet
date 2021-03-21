@@ -1,6 +1,5 @@
 authors:
-  - slug: wutali
-    name: Takahiro Fujiwara
-    introduction:
-      Co-founder and CTO at Fuller, Inc. / Software & Data Engineer /
-      Python / Golang / React
+  - slug: austin
+    name: Austin Liu
+    introduction: Co-founder and CTO at M8, Inc. / Software & Data Engineer / Python
+      / Javascript / Flutter
