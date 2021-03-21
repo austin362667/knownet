@@ -1,7 +1,7 @@
 {
-  "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Next Netlify Blog",
-  "site_description": "Next.js blog template for Netlify",
+  "base_url": "https://knowww.netlify.app/",
+  "site_title": "Knownet - Open Knowledge Project",
+  "site_description": "A co-blogging platform for knowledge management.",
   "site_keywords": [
     {
       "keyword": "Next.js"
