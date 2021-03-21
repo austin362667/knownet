@@ -3,15 +3,9 @@
   "site_title": "Knownet - Open Knowledge Project",
   "site_description": "A co-blogging platform for knowledge management.",
   "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
-    }
+    "Blog",
+    "College",
+    "Knowledge"
   ],
   "posts_per_page": 5,
   "twitter_account": "@my-account",
