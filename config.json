@@ -3,9 +3,7 @@
   "site_title": "Knownet - Open Knowledge Project",
   "site_description": "A co-blogging platform for knowledge management.",
   "site_keywords": [
-    "Blog",
-    "College",
-    "Knowledge"
+    "blog"
   ],
   "posts_per_page": 5,
   "twitter_account": "@my-account",
