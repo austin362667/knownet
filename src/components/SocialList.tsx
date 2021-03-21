@@ -1,6 +1,8 @@
 import React from "react";
 import Twitter from "../assets/twitter-alt.svg";
 import GitHub from "../assets/github-alt.svg";
+import Instagram from "../assets/instagram.svg";
+import Facebook from "../assets/facebook.svg";
 import config from "../lib/config";
 
 export function SocialList({}) {
@@ -12,7 +14,7 @@ export function SocialList({}) {
         target="_blank"
         rel="noopener"
       >
-        <instagram width={24} height={24} fill={"#222"} />
+        <Instagram width={24} height={24} fill={"#222"} />
       </a>
       <a
         title="Facebook"
