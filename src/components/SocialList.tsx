@@ -12,7 +12,7 @@ export function SocialList({}) {
         target="_blank"
         rel="noopener"
       >
-        <Instagram width={24} height={24} fill={"#222"} />
+        <instagram width={24} height={24} fill={"#222"} />
       </a>
       <a
         title="Facebook"
