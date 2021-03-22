@@ -82,9 +82,8 @@ export default function Index({
             </ul>
           </article>
           <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value={slug} />
             <p>
-      <input type="text" name="firstname" id="firstname" />
               <label htmlFor="yourname">
                 Your Name:
               </label> <br />
@@ -98,12 +97,12 @@ export default function Index({
             </p>
             <p>
               <label htmlFor="yourmessage">
-                Message:
+                Expand Content:
               </label> <br />
               <textarea name="message" id="yourmessage"></textarea>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit">Merge Request</button>
             </p>
           </form>
           <footer>
