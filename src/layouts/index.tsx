@@ -89,7 +89,7 @@ export default function Index({
               <label>Your Email: <input type="email" name="email" /></label>
             </p>
             <p>
-              <label>Topic Title: <input type="text" name="title" value=${slug} disabled/></label>
+              <label>Topic Title: <input type="text" name="title[]" value=${slug} disabled/></label>
             </p>
 <!--             <p>
               <label>Your Role: <select name="role[]" multiple>
