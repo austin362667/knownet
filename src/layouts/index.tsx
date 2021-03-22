@@ -96,10 +96,10 @@ export default function Index({
               <input type="email" name="email" id="youremail" />
             </p>
             <p>
-              <label htmlFor="yourmessage">
+              <label htmlFor="yourcontent">
                 Expand Content:
               </label> <br />
-              <textarea name="message" id="yourmessage"></textarea>
+              <textarea name="content" id="yourcontent"></textarea>
             </p>
             <p>
               <button type="submit">Merge Request</button>
