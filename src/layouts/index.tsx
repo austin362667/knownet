@@ -81,7 +81,7 @@ export default function Index({
               ))}
             </ul>
           </article>
-          <form name="expand" method="POST" data-netlify="true">
+          <form name="expand" method="POST" netlify>
             <p>
               <label>Your Name: <input type="text" name="name" /></label>   
             </p>
@@ -89,7 +89,7 @@ export default function Index({
               <label>Your Email: <input type="email" name="email" /></label>
             </p>
             <p>
-              <label>Topic Title: <input type="text" name="title[]" value=${slug} disabled/></label>
+              <label>Topic Title: <input type="text" name="title" value=${title} disabled/></label>
             </p>
 <!--             <p>
               <label>Your Role: <select name="role[]" multiple>
