@@ -1,13 +1,25 @@
 tags:
-  - slug: document
-    name: document
-  - slug: mock
-    name: mock
   - slug: style
     name: style
   - slug: license
     name: license
-  - slug: mdx
-    name: mdx
   - slug: markdown
     name: markdown
+  - slug: CS
+    name: 資工
+  - slug: UPMT
+    name: 科管
+  - slug: MS
+    name: 管科
+  - slug: CL
+    name: 中文
+  - slug: HSS
+    name: 人社
+  - slug: EE
+    name: 電機
+  - slug: ECON
+    name: 經濟
+  - slug: QF
+    name: 計財
+  - slug: JAD
+    name: 藝設
