@@ -88,7 +88,7 @@ export default function Index({
             <p>
               <label>Your Email: <input type="email" name="email" /></label>
             </p>
-            <input type="hidden" name="title" value={${slug}} />
+            <input type="hidden" name="title" value={slug} />
             <p>
               <label>Expand Content: <textarea name="content"></textarea></label>
             </p>
