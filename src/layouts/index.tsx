@@ -81,14 +81,13 @@ export default function Index({
               ))}
             </ul>
           </article>
-          <form name="expand" method="POST" data-netlify="true">
+          <form name={`${slug}`} method="POST" data-netlify="true">
             <p>
               <label>Your Name: <input type="text" name="name" /></label>   
             </p>
             <p>
               <label>Your Email: <input type="email" name="email" /></label>
             </p>
-            <input type="hidden" name="title" value={slug} />
             <p>
               <label>Expand Content: <textarea name="content"></textarea></label>
             </p>
