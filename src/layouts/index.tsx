@@ -81,7 +81,7 @@ export default function Index({
               ))}
             </ul>
           </article>
-          <form name="expand" method="POST" netlify>
+          <form name="expand" method="POST" data-netlify="true">
             <p>
               <label>Your Name: <input type="text" name="name" /></label>   
             </p>
