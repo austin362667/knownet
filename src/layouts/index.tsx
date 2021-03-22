@@ -81,6 +81,29 @@ export default function Index({
               ))}
             </ul>
           </article>
+          <form name="expand" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Topic Title: <input type="text" name="title" value=${slug} disabled/></label>
+            </p>
+<!--             <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p> -->
+            <p>
+              <label>Expand Content: <textarea name="content"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Merge Request</button>
+            </p>
+          </form>
           <footer>
             <div className={"social-list"}>
               <SocialList />
