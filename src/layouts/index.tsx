@@ -81,18 +81,29 @@ export default function Index({
               ))}
             </ul>
           </article>
-          <form name={`${slug}`} method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <p>
-              <label>Your Name: <input type="text" name="name" /></label>   
+      <input type="text" name="firstname" id="firstname" />
+              <label htmlFor="yourname">
+                Your Name:
+              </label> <br />
+              <input type="text" name="name" id="yourname" />
             </p>
             <p>
-              <label>Your Email: <input type="email" name="email" /></label>
+              <label htmlFor="youremail">
+                Your Email:
+              </label> <br />
+              <input type="email" name="email" id="youremail" />
             </p>
             <p>
-              <label>Expand Content: <textarea name="content"></textarea></label>
+              <label htmlFor="yourmessage">
+                Message:
+              </label> <br />
+              <textarea name="message" id="yourmessage"></textarea>
             </p>
             <p>
-              <button type="submit">Merge Request</button>
+              <button type="submit">Send</button>
             </p>
           </form>
           <footer>
