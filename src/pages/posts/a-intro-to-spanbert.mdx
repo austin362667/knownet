@@ -1,0 +1,29 @@
+---
+slug: a-intro-to-spanbert
+title: "[論文筆記]SpanBERT: Improving Pre-training by Representing and Predicting Spans"
+date: 2021-05-06
+author: wutali
+---
+<!--StartFragment-->
+
+首先，我們先來看看 Google 曾經提出的 **BERT** 模型。
+
+*We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.*
+
+接著FB於2019/07提出了新的架構 **SpanBERT**，大幅提升了BERT的 performance。原本BERT主要在解兩種問題：Task 1「Masked Language Modeling (MLM)」；Task 2「 Next Sentence Prediction (NSP)」，後來FBresearch認為BERT採用的 *Bi-directional方法會拉低*NSP任務的performance，若僅使用Single-Sequence Training即可達到不錯的效能，因此SpanBERT中並沒有Bi-directional *的思維(筆者教授提及Bi-directional不一定就是不好的方法，或許只是使用不當，沒有充分發揮其效果而已)。*
+
+> *SpanBERT相較於BERT針對3個面向著手改良：*
+>
+> *1.不同於BERT單一token，SpanBERT採用Span Masking以一定機率sample連續token。*
+>
+> *2.表達不定長連續token的encoder方式為 Span Boundary Objective (SBO)。*
+>
+> *3.針對Next Sentence Prediction，SpanBERT捨棄雙向(* Bi-directional*) Training，僅用Single-Sequence Training。*
+
+SpanBERT主要在解MLM問題，採用一種新的mask模式，在論文中稱為
+
+“ Span Masking”， Span Length為不定長的幾何分布， 再者，為了train這種 contiguous random spans，論文作者提出Span Boundary Objective (SBO)，以表達Masked Language Modeling問題的答案，其方法為*{文章中答案起點位置,文章中答案終點位置}，* MLM就是生活中常見的cloze test，答案直觀且客觀的特性，因此此類問題符合非監督式學習中的self-supervised learning。
+
+該篇論文中有兩種model經過某種線性組合，其一為：MLM的likelihood，另一為SBO的likelihood。MLM的Transformer Encoder即為原BERT採用的single mask(只看答案在文章中絕對位置的embedding)，而SBO的Transformer Encoder是SpanBERT採用的新架構SBO(輸入為答案起點減1的字和位置資訊的embedding,答案終點加1的字和位置資訊的embedding,span中該token在文章裡的絕對位置)。
+
+<!--EndFragment-->
