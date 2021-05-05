@@ -1,3 +1,9 @@
 [build]
   publish = "dist"
   command = "npm run export"
+[[redirects]]
+  from = "/posts/:slug/fbclid=:fbclid"
+  to = "/posts/:slug"
+  status = 301
+  force = false
+  query = {path = ":path"}
