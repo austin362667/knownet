@@ -1,11 +1,11 @@
 {
-  "base_url": "https://knowww.netlify.app/",
-  "site_title": "Knownet - Open Knowledge Project",
-  "site_description": "A co-blogging platform for knowledge management.",
-  "site_keywords": [],
-  "posts_per_page": 5,
-  "twitter_account": "@my-account",
-  "github_account": "austin362667",
   "instagram_account": "astn.0820_",
-  "facebook_account": "austin.0820"
+  "site_title": "打給孔夫子 -  馬上為您解惑",
+  "twitter_account": "@my-account",
+  "base_url": "https://knowww.netlify.app/",
+  "site_keywords": [],
+  "site_description": "5分鐘的電話勝過幾小時的google",
+  "github_account": "austin362667",
+  "facebook_account": "austin.0820",
+  "posts_per_page": 5
 }
